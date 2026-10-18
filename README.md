@@ -24,10 +24,4 @@ The primary objective of this laboratory was to transform raw tables into a high
 
 ---
 
-## 🖼️ Data Model Diagram
-
-> *The diagram above highlights the Star Schema layout with the central Sales table surrounded by descriptive Dimension tables, single-direction cross-filtering, and strict 1:\* cardinality.*
-
----
-
 Project completed as part of the PL-300 Data Analyst Learning Path.
