@@ -10,8 +10,8 @@ The primary objective of this laboratory was to transform raw tables into a high
 ## 🛠️ Key Tasks & Technical Implementation
 
 1. **Star Schema Architecture:**
-   - Identified and structured **Fact Tables** (`FactResellerSales`) containing transactional metrics and numeric key attributes.
-   - Connected **Dimension Tables** (`DimProduct`, `DimCustomer`, `DimSalesTerritory`, `DimDate`) to provide descriptive attributes for filtering and slicing.
+   - Identified and structured the central **Fact Table** (`Sales`) containing transactional metrics and numeric key attributes.
+   - Connected Dimension Tables (**`Product`**, **`Reseller`**, **`Region`**, **`Salesperson`**, **`SalespersonRegion`**, **`Targets`**) to provide descriptive attributes for filtering and slicing.
 
 2. **Relationship Configuration & Cardinality:**
    - Established **One-to-Many (`1:*`)** relationships between dimension primary keys ($PK$) and fact foreign keys ($FK$).
@@ -21,6 +21,12 @@ The primary objective of this laboratory was to transform raw tables into a high
    - **Hidden Foreign Keys:** Omitted technical foreign key columns from the Report View to prevent incorrect aggregation and improve end-user experience.
    - **Date Table Configuration:** Configured the date dimension using **Mark as Date Table** to enable time-intelligence function capabilities in DAX.
    - Categorized data types and field formatting (e.g., Currency, Percentages, and Spatial Data Types).
+
+---
+
+## 🖼️ Data Model Diagram
+
+> *The diagram above highlights the Star Schema layout with the central Sales table surrounded by descriptive Dimension tables, single-direction cross-filtering, and strict 1:\* cardinality.*
 
 ---
 
